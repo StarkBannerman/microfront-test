@@ -1,0 +1,32 @@
+{
+  "AppLayout": {
+    "home": "Startpagina",
+    "logout": "Uitloggen",
+    "profile": "Profiel"
+  },
+  "HomePage": {
+    "title": "Startpagina"
+  },
+  "LocaleSwitcher": {
+    "de": "Deutsch",
+    "en": "English",
+    "fr": "Français",
+    "es": "Español",
+    "pt": "Português",
+    "label": "Taal"
+  },
+  "LoginPage": {
+    "credentials": "Inloggegevens: jane@doe.com / next-intl",
+    "description": "Voer alstublieft uw gegevens in.",
+    "email": "E-mail",
+    "invalidCredentials": "Controleer uw inloggegevens.",
+    "invalidEmail": "Voer een geldig e-mailadres in.",
+    "invalidPassword": "Voer een wachtwoord in.",
+    "login": "Inloggen",
+    "password": "Wachtwoord",
+    "title": "Welkom terug"
+  },
+  "ProfilePage": {
+    "title": "Profiel"
+  }
+}

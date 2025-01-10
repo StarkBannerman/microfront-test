@@ -1,0 +1,72 @@
+Permissions =  [{
+
+        DASHBOARD: {
+          VIEW_DASHBOARD : BOOLEAN,
+          MANAGE_DASHBOARD : BOOLEAN
+        },
+        CONTACTS: {
+          VIEW_CONTACTS : BOOLEAN,
+          MANAGE_CONTACTS : BOOLEAN,
+          UPLOAD_CONTACTS : BOOLEAN,
+          DOWNLOAD_CONTACTS : BOOLEAN,
+          MANAGE_CONTACTS_LABELS : BOOLEAN,
+          VIEW_CONTACT_LIST : BOOLEAN,
+          MANAGE_CONTACT_LIST : BOOLEAN
+        }
+        INTEGRATIONS : {
+          VIEW_INTEGRATIONS : BOOLEAN,
+          MANAGE_INTEGRATIONS : BOOLEAN,
+        }
+        MARKETING : {
+            SEGMENTS : {
+                VIEW_SEGMENTS : BOOLEAN,
+                MANAGE_SEGMENTS : BOOLEAN
+            },
+            CAMPAIGNS : {
+              VIEW_CAMPAIGNS : BOOLEAN,
+              MANAGE_CAMPAIGNS : BOOLEAN
+            },
+
+            WORKFLOWS : {
+                VIEW_WORKFLOWS : BOOLEAN,
+                MANAGE_WORKFLOWS : BOOLEAN
+            }
+        }
+        SETTINGS : {
+          BILLING : {
+            VIEW_BILLING_LOGS : BOOLEAN,
+            MANAGE_BILLING : BOOLEAN
+          },
+          
+          USERS: {
+            VIEW_USERS : BOOLEAN,
+            MANAGE_USERS : BOOLEAN
+          }
+
+          LOGS : {
+            VIEW_LOGS : BOOLEAN,
+          },
+          connectedChannels: [
+         {
+           channel: 'string<sms||whatsapp>',
+           accountId: string,
+           access: {
+             templates: { read: boolean, write: boolean },
+             numbers: [
+               {
+                 phoneNumberId: string,
+                 read: boolean,
+                 write: boolean,
+               },
+             ],
+
+        }
+        conversations: {
+        {phoneNumberId}:{
+          VIEW_MESSAGES : BOOLEAN,
+          REPLY_MESSAGES : BOOLEAN,
+          TAG_CONVERSATIONS : BOOLEAN
+        }    
+        }
+}     
+  ]
